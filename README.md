@@ -1,26 +1,48 @@
-# grunt-init-jquery
+# webApp-Scaffold
 
-> Create a jQuery plugin with [grunt-init][], including QUnit unit tests.
+> 依赖于`Grunt-Init`
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
-## Installation
-If you haven't already done so, install [grunt-init][].
 
-Once grunt-init is installed, place this template in your `~/.grunt-init/` directory. It's recommended that you use git to clone this template into that directory, as follows:
+## Directory
 
-```
-git clone https://github.com/gruntjs/grunt-init-jquery.git ~/.grunt-init/jquery
-```
-
-_(Windows users, see [the documentation][grunt-init] for the correct destination directory path)_
+    ├── Gruntfile.js
+    ├── assets
+    │   ├── css
+    │   │   ├── config.rb
+    │   │   ├── sass
+    │   │   │   ├── app.scss
+    │   │   │   ├── function.scss
+    │   │   │   ├── global.scss
+    │   │   │   ├── mods
+    │   │   │   └── tpls
+    │   │   └── stylesheets
+    │   ├── slice
+    │   └── slice-min
+    ├── build
+    ├── components
+    ├── demo
+    │   ├── app.html
+    │   ├── index.html
+    │   ├── mods
+    │   │   └── mod.html
+    │   ├── pages
+    │   ├── proxy
+    │   └── tpls
+    ├── jssrc
+    │   └── main.js
+    ├── mocks
+    ├── mockup
+    ├── ogg
+    ├── package.json
+    ├── readme.md
+    ├── resource
+    └── src
 
 ## Usage
 
-At the command-line, cd into an empty directory, run this command and follow the prompts.
-
-```
-grunt-init jquery
-```
-
-_Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
+* 在`~/.grunt-init/`目录下新建目录，例如`webApp`
+* Clone项目至该目录下
+* 命令行执行`grunt-init webApp`
+* 安装相关npm包
