@@ -9,38 +9,38 @@
 
 ## Directory
 
-    ├── Gruntfile.js
-    ├── assetsll
-    │   ├── css
+    ├── Gruntfile.js                # Grunfile
+    ├── assets                      # 样式与切片文件
+    │   ├── css                     # Sass 目录 依赖Compass
     │   │   ├── config.rb
-    │   │   ├── sass
-    │   │   │   ├── app.scss
-    │   │   │   ├── function.scss
-    │   │   │   ├── global.scss
-    │   │   │   ├── mods
-    │   │   │   └── tpls
-    │   │   └── stylesheets
-    │   ├── slice
-    │   └── slice-min
-    ├── build
-    ├── components
-    ├── demo
-    │   ├── app.html
-    │   ├── index.html
-    │   ├── mods
+    │   │   ├── sass                
+    │   │   │   ├── app.scss        # App
+    │   │   │   ├── function.scss   # 功能样式
+    │   │   │   ├── global.scss     # 全局配置
+    │   │   │   ├── mods            # Mods目录 模块相关
+    │   │   │   └── tpls            # Tpls目录 模板相关
+    │   │   └── stylesheets         # 编译目录
+    │   ├── slice                   # 切片(未压缩)
+    │   └── slice-min               # 切片(已压缩)
+    ├── build                       # Gitlab部署目录
+    ├── components                  # 项目级别的JS组件
+    ├── demo                        # Demo目录
+    │   ├── app.html                # App.html
+    │   ├── index.html              # Demo 索引
+    │   ├── mods                    # Mods目录
     │   │   └── mod.html
-    │   ├── pages
-    │   ├── proxy
-    │   └── tpls
-    ├── jssrc
+    │   ├── pages                   # Pages目录
+    │   ├── proxy                   # Clam线上页面代理目录
+    │   └── tpls                    # Tpls目录
+    ├── jssrc                       # Js 源文件
     │   └── main.js
-    ├── mocks
-    ├── mockup
-    ├── ogg
-    ├── package.json
-    ├── readme.md
-    ├── resource
-    └── src
+    ├── mocks                       # JS Mocks 目录
+    ├── mockup                      # 视觉高保真 PSD、Sketch
+    ├── ogg                         # 音频文件
+    ├── package.json                # 项目Meta文件
+    ├── readme.md                   # 项目概要与文档
+    ├── resource                    # PRD，接口文档等存放目录
+    └── src                         # Clam线上静态资源代理目录
 
 ## Usage
 
