@@ -2,6 +2,10 @@
 
 > 依赖于`Grunt-Init` [http://gruntjs.com/project-scaffolding](http://gruntjs.com/project-scaffolding)
 
+## Intro
+
+脚手架是为在本地调试、日常开发、线上部署过程中提供一套灵活、高效、可配置的目录结构与构建系统+开发环境，方便组进行交叉项目支持与任务切换，整个脚手架的功能与结构会随着业务与项目一起迭代优化。
+
 
 ## Directory
 
