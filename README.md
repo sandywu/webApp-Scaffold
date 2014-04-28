@@ -1,14 +1,12 @@
 # webApp-Scaffold
 
-> 依赖于`Grunt-Init`
-
-[grunt-init]: http://gruntjs.com/project-scaffolding
+> 依赖于`Grunt-Init` [http://gruntjs.com/project-scaffolding](http://gruntjs.com/project-scaffolding)
 
 
 ## Directory
 
     ├── Gruntfile.js
-    ├── assets
+    ├── assetsll
     │   ├── css
     │   │   ├── config.rb
     │   │   ├── sass
