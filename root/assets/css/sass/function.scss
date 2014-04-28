@@ -1,0 +1,91 @@
+@mixin scaleWidth() {
+    width:$scaleWidth;
+    min-width:320px * 0.8;
+}
+
+
+@mixin transformScale($dpr) {
+    width:100% * $dpr;
+    -webkit-transform:scale(1 / $dpr);
+    -webkit-transform-origin:0% 0%;  
+}
+ 
+@mixin scaleBg($uri, $width, $height) {
+    background:url($uri) center center no-repeat;
+    background-size:100% 100%;
+    width: #{$width / 2}px;
+    height: #{$height / 2}px;    
+}
+
+@mixin breakpoint($dpr) {
+  @if $dpr == $normalDpr {
+      @media (-webkit-min-device-pixel-ratio: 1) { 
+          @content; 
+      }      
+  }
+  @else if $dpr == $mediumDpr {
+      @media (-webkit-min-device-pixel-ratio: 1.5) { 
+          @content; 
+      }      
+  }
+  @else if $dpr == $retinaDpr {
+      @media (-webkit-min-device-pixel-ratio: 2) { 
+          @content; 
+      }      
+  }
+}
+
+@mixin verticalAlign() {
+    display: -webkit-flex;
+    -webkit-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    z-index: 20;
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */ 
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+    -webkit-box-align: center;
+    -moz-box-align: center; /* OLD… */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+}
+
+@mixin gradient($from, $to) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+ 
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient($from, $to);
+ 
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+ 
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient($from, $to);
+ 
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient($from, $to);
+}
+
+
+@mixin fade() {
+    
+    &.show {
+        visibility:visible;
+        opacity:1;
+    }
+    
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition:opacity 0.3s ease-in-out;
+}
+
+@mixin borderBottom($color) {
+    background-image: linear-gradient(to bottom, $color, $color 50%, transparent 50%);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;                       
+}

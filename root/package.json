@@ -1,0 +1,49 @@
+{
+  "name": "webApp",
+  "description": "webApp",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": [
+    {
+      "name": "liuling.wb",
+      "email": "liuling.wb@taobao.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-depconcat": "~0.2.0",
+    "grunt-depcombo": "~0.1.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.4.0"
+  },
+  "dependencies": {
+    "pngquant-bin": "~0.1.5"
+  },
+  "combo": {
+    "zepto": "1.0.4",
+    "lib.mtop": "0.5.12",
+    "lib.windvane/bridge": "1.1.12",
+    "lib.smartbanner": "0.2.15",
+    "lib.aplus": "1.1.0"
+  },
+  "keywords": []
+}
